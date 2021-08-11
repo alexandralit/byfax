@@ -1,0 +1,50 @@
+$color: #ffffff;
+$color-hover: #394000;
+$background-hover: #c1d64b;
+
+nav {
+    @media (max-width: 425px) {
+        display: none;
+    }
+    
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        li a {
+            text-transform: uppercase;
+            padding: 10px 25px;
+            font-size: 16px;
+            line-height: 21px;
+            color: $color;
+            font-weight: 600;
+            border-radius: 20px;
+            transition: all .3s ease-in-out;
+            margin-left: 5px;
+            margin-top: 10px;
+
+            @media (max-width: 992px) {
+                font-size: 15px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+        }
+
+        li:nth-child(2) {
+            text-decoration: underline;
+
+            @media (max-width: 768px) {
+                text-decoration: none;
+            }
+        }
+
+        li a:hover {
+            background-color: $background-hover;
+            color: $color-hover;
+        }
+    }
+}

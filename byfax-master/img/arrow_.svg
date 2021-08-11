@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 15" width="25" height="15">
+	<title>как отправить факс?</title>
+	<defs>
+		<image  width="25" height="15" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAPCAMAAAAmuJTXAAAAAXNSR0IB2cksfwAAAFdQTFRFETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdMETdM5xJBNQAAAB10Uk5TSgDUpC7/lCSHJYIvezRwOWtCY0laTlVXUF2MWTPp1h1RAAAAeUlEQVR4nG3NRxKDUBBDwXmAyDljfP9zGmfCn4VUql6MGe4z83wn+J4FCh0QKjAixReIFbG9SZSeIFXCU8iUHyBXxlsoVO6gVMFXqFT/oFbFX2jUfqBVw17o1L+6V8dRGDRuOWrgLEyamTVxFRbdtOASVq24hft+PAD1NwSKUTG5ZAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="как отправить факс?">
+		<use id="direction196" href="#img1" x="0" y="0" />
+	</g>
+</svg>

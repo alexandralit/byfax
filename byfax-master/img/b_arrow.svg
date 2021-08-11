@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 31" width="32" height="31">
+	<title>полоска над шапкой</title>
+	<defs>
+		<image  width="32" height="31" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAAAXNSR0IB2cksfwAAAEhQTFRFLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsLVVsxi0xlQAAABh0Uk5T//jWjioA/ZgIvQST/CSJ+fPUkJUGCfQsHg67ngAAAFJJREFUeJzt08kBgCAAA8GI4AkqePXfqVIAbAG638w3UqHGtNa9lfZc1w91II0TAM0EfACghYAhsBL4+1QbgUggwe4tgJ2edcA3z8o3r5ju/O4HefEBqxGaswgAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="полоска над шапкой">
+		<g id="смена языка">
+			<use id="Слой 95" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

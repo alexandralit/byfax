@@ -1,0 +1,52 @@
+$color-background: #2c5871;
+$img-background: './../../img/';
+
+.container {
+    background-color: $color-background;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url($img-background + 'background.png');
+    
+    @media (max-width: 25600px) {
+        margin-bottom: -180px;
+    }
+
+    @media (max-width: 1440px) {
+        margin-bottom: -121px;
+    }
+
+    @media (max-width: 1400px) {
+        margin-bottom: -108px;
+    }
+
+    @media (max-width: 992px) {
+        margin-bottom: -97px;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: -85px;
+    }
+
+    .wrapper {
+        padding: 45px 0;
+
+        @media (max-width: 992px) {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-image: url($img-background + 'map.png');
+        }
+
+        @media (max-width: 768px) {
+            max-width: 755px;
+            padding: 45px 34px;
+            background-position: top center;
+        }
+
+        @media (max-width: 425px) {
+            padding: 30px 10px;
+            background-size: 150vw;
+            background-position: top;
+        }
+    }
+}

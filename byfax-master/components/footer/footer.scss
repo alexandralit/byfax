@@ -1,0 +1,49 @@
+$color-blue: #2c5871;
+$background: #0f303f;
+
+footer {
+    padding: 27px 0 32px 0;
+    background-color: $background;
+
+    @media (max-width: 425px) {
+        padding: 15px 0 8px 0;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 425px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .text {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 18px;
+            color: $color-blue;
+            font-weight: 400;
+
+            p:first-child {
+                padding-right: 12px;
+            }
+
+            @media (max-width: 425px) {
+                font-size: 11px;
+                padding-top: 10px;
+            }
+        }
+
+        .select {
+            display: none;
+
+            @media (max-width: 425px) {
+                display: block;
+            }
+        }
+    }
+}
+

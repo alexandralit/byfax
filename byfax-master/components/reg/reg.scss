@@ -1,0 +1,187 @@
+$font: 'Open Sans', sans-serif;
+$color-background: #0f303f;
+$color-sign-in: #7e9111;
+$color-sign-up: #2c5e7a;
+$color-white: #ffffff;
+$color-hover: #394000;
+$background-hover: #c1d64b;
+$img: './../../img/';
+
+.reg {
+    background-color: $color-background;
+    padding: 8px 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: flex-end;
+
+        @media (max-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 425px) {
+            display: block;
+
+            div {
+                display: flex;
+            }
+        }
+
+        .sign-in,
+        .sign-up {
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 21px;
+            color: $color-white;
+            font-weight: 400;
+            padding: 10px;
+            border-radius: 8px;
+            transition: all .3s ease-in-out;
+
+            @media (max-width: 425px) {
+                font-size: 12px;
+                padding: 8px 10px;
+            }
+        }
+
+        .sign-in {
+            background-color: $color-sign-in;
+            margin-right: 7px;
+        }
+
+        .sign-up {
+            background-color: $color-sign-up;
+            margin-right: 15px;
+
+            @media (max-width: 425px) {
+                margin-right: 150px;
+            }
+
+            @media (max-width: 320px) {
+                margin-right: 85px;
+            }
+        }
+
+        .sign-in:hover,
+        .sign-up:hover {
+            opacity: 0.6;
+        }
+
+        @media (max-width: 425px) {
+            form {
+                display: none;
+            } 
+        }
+
+        .hamburger-menu {
+            display: none;
+        }
+
+        @media (max-width: 425px) {
+            .hamburger-menu {
+                display: flex;
+                align-items: center;
+                position: relative;
+                z-index: 3;
+
+                #menu-toggle {
+                    display: none;
+                }
+                
+                .menu-btn {
+                    display: flex; 
+                    align-items: center;  
+                    width: 36px;
+                    height: 26px;
+                    cursor: pointer;
+                    z-index: 4;
+                }
+                
+                .menu-btn > span,
+                .menu-btn > span::before,
+                .menu-btn > span::after {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    background-color: $color-white;
+                    transition: all .3s ease-in-out;
+                }
+
+                .menu-btn > span::before {
+                    content: '';
+                    top: -8px;
+                }
+
+                .menu-btn > span::after {
+                    content: '';
+                    top: 8px;
+                }
+
+                .menu-box {
+                    display: block;
+                    position: fixed;
+                    visibility: hidden;
+                    top: 0;
+                    right: -100%;
+                    width: 250px;
+                    height: 100%;
+                    margin: 0;
+                    padding: 80px 0;
+                    list-style: none;
+                    text-align: center;
+                    background-color: $color-background;
+                    box-shadow: 1px 0px 6px $color-background;
+                    transition: all .3s ease-in-out;
+
+                    li {
+                        border-radius: 20px;
+                        
+                        a {
+                            display: block;
+                            padding: 12px 24px;
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            line-height: 21px;
+                            color: $color-white;
+                            font-weight: 600;
+                            border-radius: 20px;
+                            transition: all .3s ease-in-out;
+                            margin: 0 15px;
+                        }
+
+                        a:hover {
+                            background-color: $background-hover;
+                            color: $color-hover;
+                        }
+                    }
+                }
+                  
+                #menu-toggle:checked ~ .menu-btn > span {
+                    transform: rotate(45deg);
+                    transition: all .3s ease-in-out;
+                }
+
+                #menu-toggle:checked ~ .menu-btn > span::before {
+                    top: 0;
+                    transform: rotate(0);
+                    transition: all .3s ease-in-out;
+                }
+
+                #menu-toggle:checked ~ .menu-btn > span::after {
+                    top: 0;
+                    transform: rotate(90deg);
+                    transition: all .3s ease-in-out;
+                }
+
+                #menu-toggle:checked ~ .menu-box {
+                    visibility: visible;
+                    right: 0;
+                } 
+            }
+        }
+    }
+}
+
